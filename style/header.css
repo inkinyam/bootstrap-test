@@ -1,0 +1,38 @@
+
+/*стили HEADER*/
+.header-small {
+  width: 100%;
+  padding-top: 16px;
+}
+
+.header__logo {
+ width: 225px;
+ height: 70px;
+}
+
+@media (max-width: 1300px) {
+  .header__logo {
+    width: 135px;
+    height: 45px;
+   }
+}
+
+.header__btn {
+  background-color: #333333;
+  height: 40px;
+  width: 58px;
+  border-radius: 25px;
+}
+
+.header__btn-left {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.header__btn-right {
+  width: 123px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: var(--color-main);
+}
+

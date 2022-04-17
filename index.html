@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+
+  <link href="./bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+</head>
+<body class="root">
+
+<!-- блок HEADER-->
+<header class="header pb-lg-5 pb-3">
+  <div class="header-big  pt-4 px-5 pb-5 ">
+
+    <div class="contaier">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-xl-2 col-md-2">
+          <img src="./image/logo.svg" alt="logo" class=" img  header__logo">
+        </div>
+ <!-- тот блок, который отображается на больших экранах, прячем для экранов меньше 768-->
+        <div class="col-xl-9 col-md-9">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 g-0 flex-shrink-0">
+              <div class="container d-flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p class="m-0 py-0 ps-2 pe-1 text-small text-color-main">Ховрино </p>
+                <p class="m-0 py-0 text-small text-color-black-60"> Круглосуточно</p>
+              </div>
+              <p class="m-0 p-0 text-numbers text-lg-center">+7 (495) 980-66-22</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 g-0 flex-shrink-0">
+              <div class="container d-flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p class="m-0 py-0 ps-2 pe-1 text-small text-color-main">Измайлово</p>
+                <p class="m-0 p-0 text-small text-color-black-60"> Круглосуточно</p>
+              </div>
+              <p class="m-0 p-0 text-numbers text-lg-center">+7 (495) 730-55-66</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 g-0 flex-shrink-0">
+              <div class="container d-flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p class="m-0 py-0 ps-2 pe-1 text-small text-color-main">Мытищи</p>
+                <p class="m-0 p-0 text-small text-color-black-60">Круглосуточно</p>
+              </div>
+              <p class="m-0 p-0 text-numbers text-lg-center">+7 (495) 500-40-40</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 g-0 flex-shrink-1">
+              <div class="container d-flex flex-row">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p class="m-0 py-0 ps-2 pe-1 text-small text-color-main ">Хор.-Мневники</p>
+                <p class="m-0 p-0 text-small text-color-black-60"> Круглосуточно</p>
+              </div>
+              <p class="m-0 p-0 text-numbers text-lg-center">+7 (495) 950-66-22</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- блок HEADER для маленьких экранов , показываем для экранов меньше 768-->
+  <div class="header-small">
+    <div class="contaier">
+      <div class="row m-0 justify-content-between">
+
+        <button class="col-2 btn header__btn header__btn-left ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+        </и>
+
+        <button class="col-2 btn header__btn ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+        </button>
+
+        <button class="col-2 btn header__btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </button>
+
+        <button class="col-4 text-price-sm btn header__btn  header__btn-right">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-cart3" viewBox="0 0 16 16">
+            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          4888 &#8381;
+        </button>
+
+
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main >
+<!-- блок STATUS, отображение статуса заказа-->
+<section class="status">
+  <div class="container">
+    <div class="row w-75">
+      <p class="text text__status">
+        <span class="text__status-active">Корзина</span>
+          <span class="divider"></span>
+        <span class="">Оформление заказа</span>
+          <span class="divider"></span>
+        <span class="">Готово</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- блок MAIN
+  <div class="container px-0">
+    <div class="row">
+      <div class="col-8 ">
+        <div class="card cards card__bucket mt-3">
+          <button type="button" class="btn card__del-button"></button>
+          <img src="./image/pizza-bbq.png" alt="" class="card-img card__image-left">
+          <div class="container d-flex flex-column">
+            <h3 class="card-title card__title">Чизбургер барбекю</h3>
+            <p class="card-text card__text">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
+            <div class="btn-group card__buttons" role="group">
+              <p class="text__price">8888 &#8381;</p>
+              <button type="button" class="btn card__button card__left-button">-</button>
+              <input type="text"  class="card__button card__buttons-counter" value="1" placeholder="1">
+              <button type="button" class="btn card__button card__right-button">+</button>
+              <p class="text__price">8888 &#8381;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cards card__bucket">
+          <button type="button" class="btn card__del-button"></button>
+          <img src="./image/pizza-suprim.png" alt="" class="card-img card__image-left">
+          <p class="card__label-new">NEW </p>
+          <div class="container d-flex flex-column">
+            <h3 class="card-title card__title">Суприм</h3>
+            <p class="card-text card__text">Соус томатный, сыр моцарелла, колбаса пепперони, ветчина, лук, сладкий перец, грибной микс, свинина, говядина, оливки черные</p>
+            <div class="btn-group card__buttons" role="group">
+              <p class="text__price">690 &#8381;</p>
+              <button type="button" class="btn card__button card__left-button">-</button>
+              <input type="text"  class="card__button card__buttons-counter" value="1" placeholder="1">
+              <button type="button" class="btn card__button card__right-button">+</button>
+              <p class="text__price">690 &#8381;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cards card__bucket">
+          <button type="button" class="btn card__del-button"></button>
+          <img src="./image/burger.png" alt="" class="card-img card__image-left">
+          <p class="card__label-new">NEW </p>
+          <div class="container d-flex flex-column">
+            <h3 class="card-title card__title">Бургер &#171;Два сыра&#187;</h3>
+            <p class="card-text card__text">Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
+            <div class="btn-group card__buttons" role="group">
+              <p class="text__price">180 &#8381;</p>
+              <button type="button" class="btn card__button card__left-button">-</button>
+              <input type="text"  class="card__button card__buttons-counter" value="3" placeholder="1">
+              <button type="button" class="btn card__button card__right-button">+</button>
+              <p class="text__price">180 &#8381;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cards card__bucket">
+          <button type="button" class="btn card__del-button"></button>
+          <img src="./image/sushi.png" alt="" class="card-img card__image-left">
+          <p class="card__label-new">NEW </p>
+          <div class="container d-flex flex-column">
+            <h3 class="card-title card__title">Суши Унаги</h3>
+            <p class="card-text card__text">Угорь</p>
+            <div class="btn-group card__buttons" role="group">
+              <p class="text__price">120 &#8381;</p>
+              <button type="button" class="btn card__button card__left-button">-</button>
+              <input type="text"  class="card__button card__buttons-counter" value="10" placeholder="1">
+              <button type="button" class="btn card__button card__right-button">+</button>
+              <p class="text__price">1200 &#8381;</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card cards card__bucket">
+          <button type="button" class="btn card__del-button"></button>
+          <img src="./image/sushi-2.png" alt="" class="card-img card__image-left">
+          <p class="card__label-new">NEW </p>
+          <div class="container d-flex flex-column">
+            <h3 class="card-title card__title">Умэ</h3>
+            <p class="card-text card__text">Лосось, угорь, сыр «Филадельфия», авокадо</p>
+            <div class="btn-group card__buttons" role="group">
+              <p class="text__price">385 &#8381;</p>
+              <button type="button" class="btn card__button card__left-button">-</button>
+              <input type="text"  class="card__button card__buttons-counter" value="2" placeholder="1">
+              <button type="button" class="btn card__button card__right-button">+</button>
+              <p class="text__price">770 &#8381;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-4 ">
+         <div class="form form-promo">
+            <h3 class="form-title card__title">+ 358 баллов</h3>
+            <p class="card__text">Баллы начисляются в течении двух дней и доступны для использования при заказе от 500 руб. Только для зарегистрированных пользователей. </p>
+            <p class="card__text">Зарегистрируйтесь или войдите.</p>
+            <fieldset class="form__promocode">
+              <h3 class="form-title card__title">Промокод</h3>
+              <input type="text" class="form-control form__input" placeholder="Введите промокод">
+              <button type="button" class="btn form__submit">Применить</button>
+            </fieldset>
+            <p class="text__price">Сумма заказа: <span class="span-accent">4200</span> 3580 &#8381;</p>
+            <button type="button" class="btn w-100 form__next">Далее</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container pt-5 mb-4 px-0">
+    <div class="row ">
+      <div class="col-8 ">
+        <p class="text text__status text__status-active pb-3">Подарки</p>
+        <div class="card cards card__bucket mt-4">
+          <button type="button" class="btn card__del-button"></button>
+          <img src="./image/mors.png" alt="подарок" class="card-img card__image-left">
+          <p class="card__label-present">Подарок</p>
+          <div class="container d-flex flex-column">
+            <h3 class="card-title card__title">Морс "Смородина"</h3>
+            <p class="card-text card__text">Морс "Смородина", 1 л.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container recommend">
+    <p class="text text__status text__status-active pb-3">Рекомендуем</p>
+    <div class="row mt-4 recommend-row">
+      <div class="col-3">
+        <div class="card px-0 cards card-recommend">
+          <img src="./image/pizza-bbq.png" alt="" class="card-img card-img-top">
+          <div class="card-body p-0 d-flex flex-column">
+            <h3 class="card-title card-recommend-title">Чизбургер барбекю</h3>
+            <p class="card-text  card-recommend-text">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
+            <button type="button" class="btn recommend-button">от 287 &#8381;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card px-0 cards card-recommend">
+          <img src="./image/burger.png" alt="" class="card-img card-img-top">
+          <div class="card-body p-0 d-flex flex-column">
+            <h3 class="card-title card-recommend-title">Бургер &#171;Два сыра&#187;</h3>
+            <p class="card-text  card-recommend-text">Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
+            <button type="button" class="btn recommend-button recommend-button-colored">387 &#8381;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card px-0 cards card-recommend">
+          <img src="./image/sushi-3.png" alt="" class="card-img card-img-top">
+          <div class="card-body p-0 d-flex flex-column">
+            <h3 class="card-title card-recommend-title">Суши Эби</h3>
+            <p class="card-text  card-recommend-text">Креветка</p>
+            <button type="button" class="btn recommend-button recommend-button-colored">130 &#8381;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card px-0 cards card-recommend">
+          <img src="./image/pizza-bbq.png" alt="" class="card-img card-img-top">
+          <div class="card-body p-0 d-flex flex-column">
+            <h3 class="card-title card-recommend-title">Чизбургер барбекю</h3>
+            <p class="card-text  card-recommend-text">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
+            <button type="button" class="btn recommend-button">от 287 &#8381;</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="card px-0 cards card-recommend">
+          <img src="./image/burger.png" alt="" class="card-img card-img-top">
+          <div class="card-body p-0 d-flex flex-column">
+            <h3 class="card-title card-recommend-title">Бургер &#171;Два сыра&#187;</h3>
+            <p class="card-text  card-recommend-text">Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
+            <button type="button" class="btn recommend-button recommend-button-colored">387 &#8381;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container p-0">
+    <div class="row justify-content-end">
+      <div class="col-auto p-0 d-flex flex-column justify-content-end">
+        <p class="text__price final-price">Сумма заказа: <span class="span-accent">4200</span> 3580 &#8381;</p>
+        <button type="button" class="btn form__next button__next">Далее</button>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+-->
+<!-- блок FOOTER-->
+<footer class="footer">
+  <div class="container py-5 mx-auto">
+    <div class="row justify-content-lg-between">
+      <div class="col-lg-6 col-sm-12">
+        <div class="row row-cols-lg-3 row-cols-2">
+          <div class="col">
+            <ul class="list-unstyled color-white">
+              <li class=""><a href="#" class="footer__list-link">Меню</a></li>
+              <li class=""><a href="#" class="footer__list-link">Барное меню</a></li>
+              <li class=""><a href="#" class="footer__list-link">Ресторан</a></li>
+              <li class=""><a href="#" class="footer__list-link">Акции</a></li>
+              <li class=""><a href="#" class="footer__list-link mb-0">Блюда за баллы</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class=""><a href="" class="footer__list-link">Доставка</a></li>
+              <li class=""><a href="" class="footer__list-link">Отзывы</a></li>
+              <li class=""><a href="" class="footer__list-link">Маленький кондитер</a></li>
+              <li class=""><a href="" class="footer__list-link mb-0">Подарочные карты</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class=""><a href="#" class="footer__list-link">О нас</a></li>
+              <li class=""><a href="#" class="footer__list-link">Вакансии</a></li>
+              <li class=""><a href="#" class="footer__list-link">События</a></li>
+              <li class=""><a href="#" class="footer__list-link">Статьи</a></li>
+              <li class=""><a href="#" class="footer__list-link mb-0">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-6 col-12">
+
+          <div class="row row-cols-lg-2 row-cols-1 ">
+            <div class="col-lg-5">
+              <div class="row justify-content-lg-end justify-content-start pb-4">
+                <img src="./image/Visa.svg" alt="Visa"  class="img px-0 footer__payment-sm">
+                <img src="./image/Mastercard.svg" alt="Mastercard" class="img px-0 footer__payment-sm">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="row justify-content-start pb-4">
+                <img src="./image/Google Play.svg" alt="Google Play" class="img px-0 footer__payment-lg">
+                <img src="./image/App Store.svg" alt="AppStore" class="img px-0 footer__payment-lg">
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4 text-xl-end text-right">
+            <div class="w-100">
+              <p class="mb-0 pb-0 text-small">2004 - 2020 © Vivat Pizza. <a href="#" class="footer__link">Договор публичной аферты</a></p>
+              <p class="my-0 py-0 text-small"> Использование материалов с сайта без нашего ведома незаконно</p>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script type="text/javascript" src="./scripts/jquery.js"></script>
+  <script type="text/javascript" src="./bootstrap/bootstrap.js"></script>
+</body>
+</html>

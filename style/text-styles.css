@@ -1,0 +1,33 @@
+/*Стили текст*/
+.text-small {
+  /*хедер, футер копирайт*/
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.text-price-sm {
+   /*хедер кнопка*/
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: white;
+  padding: 0;
+}
+
+.text-numbers {
+  /*номера телефонов*/
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  color: black;
+}
+
+.text-color-black-60 {
+  color: #666666;
+}
+
+.text-color-main {
+  color: var(--color-main);
+}

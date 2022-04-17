@@ -1,0 +1,326 @@
+@import url(../bootstrap/bootstrap.css);
+@import url(../fonts/fonts.css);
+
+@import url(./text-styles.css);
+@import url(./header.css);
+@import url(./footer.css);
+
+.root {
+  --color-main: #CC693E;
+  --color-grey: #CCC;
+  --bg-grey: #F1F1F1;
+  --bg-dark: #1A1A1A;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+
+/*стили строки состояния заказа*/
+.status {
+  margin: 32px 0 32px;
+}
+
+.text__status * {
+  flex-shrink: 0;
+}
+
+.text__status {
+  margin: 0;
+  padding: 0;
+  color: var(--color-grey);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.text__status-active {
+  color: black;
+}
+
+.divider {
+  flex-shrink: 1;
+  border-bottom: 4px dotted var(--color-grey);
+  margin:  0 18px;
+  width: 100%;
+}
+
+
+/*стили Карточек с заказом*/
+
+.cards {
+  border: none;
+  background-color: var(--bg-grey);
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+.card__bucket {
+  flex-direction: row;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.card__bucket:last-child {
+  margin-bottom: 0;
+}
+
+.card__image-left {
+  max-width: 185px;
+  height: 215px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.card__label-new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 67px;
+  height: 32px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32), 0 1px 6px rgba(0, 0, 0, 0.24);
+  color: white;
+  background-color: #E30029;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.card__label-present {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 67px;
+  height: 32px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32), 0 1px 6px rgba(0, 0, 0, 0.24);
+  color: #333333;
+  background-color: #FFE600;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.card__buttons {
+  width: 286px;
+  height: 48px;
+  align-items: center;
+  align-self: flex-end;
+}
+
+.card__buttons-counter{
+  width: 52px;
+}
+
+.card__button {
+  border: none;
+  outline: none;
+  border-top: 2px solid var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+  padding: 0;
+  height: 48px;
+  background-color: white;
+}
+
+.card__left-button {
+  border-right: 2px solid var(--color-main);
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  margin-left: 16px !important;
+}
+
+.card__right-button {
+  border-left: 2px solid var(--color-main);
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  margin-right: 16px;
+}
+
+.card__del-button {
+  background-image: url(../image/button-del-item.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.card__buttons-counter {
+  text-align: center;
+}
+
+
+.card__title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 16px 0 10px;
+}
+
+.card__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #666666;
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+
+.text__price {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #333333;
+  margin: 0;
+}
+
+.span-accent {
+  color: var(--color-grey);
+  text-decoration: line-through;
+}
+
+
+/*стили формы с введением промокода*/
+
+.form-promo {
+  max-width: 411px;
+  min-height: 597px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 0 1px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.form-promo>.card__title {
+ margin-top: 0;
+}
+
+.form-promo>.card__text {
+  color:#333333;
+  max-width: 331px;
+}
+
+.form__promocode {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 30px;
+}
+
+.form__submit {
+  outline: none;
+  border: 2px solid var(--color-main);
+  border-radius: 40px;
+  color: var(--color-main);
+  padding: 0;
+  margin: 16px 0 40px;
+  width: 160px;
+  height: 40px;
+  align-self: flex-end;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.form__next {
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--color-main);
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.25);
+  height: 64px;
+  margin-top: 60px;
+}
+
+/*стили для карточек в рекомендуемом*/
+.recommend {
+  margin: 64px 0 0;
+  padding: 0;
+
+}
+
+.recommend-row {
+  max-width: 1337px;
+  overflow: hidden; /*спрятана карточка!*/
+  flex-wrap: nowrap;
+  border-bottom: 2px solid #B3B3B3;
+}
+
+.card-recommend{
+  max-width: 298px;
+  margin-bottom: 64px;
+}
+
+.card-recommend-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  width: 265px;
+  margin: 16px auto;
+}
+
+.card-recommend-text{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  width: 265px;
+  margin: 0 auto 16px;
+}
+
+.recommend-button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  outline: none;
+  color: var(--color-main);
+  background-color: white;
+  border: 2px solid var(--color-main);
+  border-radius: 32px;
+  padding: 0;
+  margin: 0 16px 16px 0;
+  width: 160px;
+  height: 40px;
+  align-self: flex-end;
+}
+
+.recommend-button-colored {
+  background-color: var(--color-main);
+  color: white;
+}
+
+.final-price {
+  margin: 32px 0;
+  align-self: flex-end;
+}
+
+.button__next {
+  width: 331px;
+  margin: 20px 0 70px;
+  border: 1px solid black;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28), 0 1px 5px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
