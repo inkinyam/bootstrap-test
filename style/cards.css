@@ -103,16 +103,6 @@
   width: 40px;
 }
 
-@media (max-width: 768px) {
-  .card__button{
-    height: 32px;
-    width: 36px;
-  }
-  .card__left-button, .card__right-button {
-    width: 26px;
-  }
-}
-
 .card__del-button {
   background-image: url(../image/button-del-item.svg);
   background-size: contain;
@@ -130,4 +120,18 @@
 
 .card__text {
   margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .card__button{
+    height: 32px;
+    width: 36px;
+  }
+  .card__left-button, .card__right-button {
+    width: 26px;
+  }
+  .card__del-button {
+    width: 16px;
+    height: 16px;
+  }
 }
