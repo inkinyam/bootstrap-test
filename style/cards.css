@@ -1,0 +1,133 @@
+
+/*стили Карточек с заказом*/
+
+.cards {
+  border: none;
+  background-color: var(--bg-grey);
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.card__image-left {
+  object-fit: cover;
+  width: 185px;
+  height: 215px;
+}
+
+@media (max-width: 1200px) {
+  .card__image-left {
+    width: 150px;
+    height: 215px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+  }
+
+  .card__image-left {
+    width: 150px;
+    height: 60px;
+  }
+}
+
+
+.card__label-new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 67px;
+  height: 32px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32), 0 1px 6px rgba(0, 0, 0, 0.24);
+  color: white;
+  background-color: #E30029;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.card__label-present {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 67px;
+  height: 32px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32), 0 1px 6px rgba(0, 0, 0, 0.24);
+  color: #333333;
+  background-color: #FFE600;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+
+.card__buttons {
+  height: 48px;
+  align-items: center;
+}
+
+.card__button {
+  border: none;
+  outline: none;
+  border-top: 2px solid var(--color-main);
+  border-bottom: 2px solid var(--color-main);
+  padding: 0;
+  height: 48px;
+  width: 52px;
+  background-color: white;
+}
+
+.card__left-button {
+  border-right: 2px solid var(--color-main);
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  width: 40px;
+}
+
+.card__right-button {
+  border-left: 2px solid var(--color-main);
+  border-top-right-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .card__button{
+    height: 32px;
+    width: 36px;
+  }
+  .card__left-button, .card__right-button {
+    width: 26px;
+  }
+}
+
+.card__del-button {
+  background-image: url(../image/button-del-item.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+}
+
+.card__buttons-counter {
+  text-align: center;
+}
+
+.card__text {
+  margin-bottom: 24px;
+}

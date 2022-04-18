@@ -12,8 +12,8 @@
 <body class="root">
 
 <!-- блок HEADER-->
-<header class="header pb-lg-5 pb-3">
-  <div class="header-big  pt-4 px-5 pb-5 ">
+<header class="header pb-md-3 pb-2">
+  <div class="header-big  pt-4 px-5 pb-3 ">
 
     <div class="contaier">
       <div class="row justify-content-between align-items-center">
@@ -72,7 +72,7 @@
     </div>
   </div>
 <!-- блок HEADER для маленьких экранов , показываем для экранов меньше 768-->
-  <div class="header-small  d-block d-md-none">
+  <div class="header-small p-0 d-block d-md-none">
     <div class="contaier">
       <div class="row m-0 justify-content-between">
 
@@ -101,8 +101,6 @@
           </svg>
           4888 &#8381;
         </button>
-
-
       </div>
     </div>
   </div>
@@ -111,13 +109,13 @@
 
 <main >
 <!-- блок STATUS, отображение статуса заказа-->
-  <section class="status ps-lg-5 ps-3 overflow-hidden ">
+  <section class="ps-lg-5 ps-3 overflow-hidden pb-3 pt-md-5 pt-4">
     <div class="container p-0">
       <div class="row w-75">
         <p class="text-headers row__status">
           <span class="">Корзина</span>
             <span class="divider"></span>
-          <span class="text-headers-unactive">Оформление заказа</span>
+          <span class="text-headers-unactive">Оформление </span>  <span class="text-headers-unactive d-none d-md-block">&nbsp;заказа</span>
             <span class="divider"></span>
           <span class="text-headers-unactive">Готово</span>
         </p>
@@ -127,47 +125,206 @@
 
 
 <!--блок ORDER -->
-  <section class="order">
-    <div class="container">
-      <div class="row">
+  <section class="order mt-3">
+    <div class="container p-0">
+      <div class="row m-0">
+
       <!--карточка карточки с заказом -->
-        <div class="col-lg-8 col-12 p-0 pe-md-3">
-          <div class="container p-0">
+        <div class="col-lg-8 col-12 p-0 pe-lg-3 mt-md-3">
+          <div class="container p-0  mb-1 mb-md-4">
             <div class="row m-0">
               <div class="col-12 p-0">
-
-                <div class="card cards">
+                <div class="card cards overflow-hidden">
                   <div class="container p-0">
-                    <div class="row m-0">
-                      <div class="col-lg-3 g-0">
-                        <img src="./image/pizza-bbq.png" alt="Чизбургер барбекю" class="card-img m-0 card__image-left">
-                      </div>
-                      <div class="col-lg-9 g-0 d-flex flex-column">
-                        <button type="button" class="btn card__del-button"></button>
-                        <h3 class="card-title text-card-header mt-3">Чизбургер барбекю</h3>
-                        <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 d-none d-md-block">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
-                        <div class="btn-group card__buttons me-3">
-                          <p class="text-numbers">8888 &#8381;</p>
-                          <button type="button" class="btn card__button card__left-button">-</button>
-                          <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
-                          <button type="button" class="btn card__button card__right-button">+</button>
-                          <p class="text-numbers">8888 &#8381;</p>
-                        </div>
+                    <div class="row m-0 align-items-center ">
+                        <img src="./image/pizza-bbq.png" alt="Чизбургер барбекю" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                        <h3 class=" card-img-overlay text-min-card d-block d-md-none m-0 align-middle">Чизбургер барбекю</h3>
+                        <div class="col-md-9 col-6 g-0 ">
+                        <div class="card-body p-md-3 p-0 d-flex flex-column">
+                          <div class="d-none d-md-block">
+                            <button type="button" class="btn card__del-button"></button>
+                            <h3 class="card-title text-card-header">Чизбургер барбекю</h3>
+                            <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 ">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
+                          </div>
+                          <div class="btn-group card__buttons  m-0 align-self-center align-self-md-end">
+                            <p class="text-prices d-none d-md-block">
+                              <span class="text-headers-unactive me-4 text-decoration-line-through">560</span>888 &#8381;</p>
+                            <button type="button" class="card__button card__left-button ms-lg-3 ms-3">-</button>
+                            <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                            <button type="button" class="card__button card__right-button me-lg-3 me-3">+</button>
+                            <p class="text-prices ">
+                              <span class="text-headers-unactive me-4 text-decoration-line-through">560</span>888 &#8381;</p>
+                          </div>
+                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-
-
               </div>
             </div>
           </div>
+
+          <div class="container p-0 mb-1 mb-md-4 pt-md-3">
+            <div class="row m-0">
+              <div class="col-12 p-0">
+                <div class="card cards overflow-hidden">
+                  <div class="container p-0">
+                    <div class="row m-0 align-items-center ">
+                        <img src="./image/pizza-suprim.png" alt="Суприм" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                        <p class="card__label-new d-none d-md-block">NEW </p>
+                        <h3 class=" card-img-overlay text-min-card d-block d-md-none m-0 align-middle">Суприм</h3>
+                        <div class="col-md-9 col-6 g-0 ">
+                        <div class="card-body p-md-3 p-0 d-flex flex-column">
+                          <div class="d-none d-md-block">
+                            <button type="button" class="btn card__del-button"></button>
+                            <h3 class="card-title text-card-header">Суприм</h3>
+                            <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 ">Соус томатный, сыр моцарелла, колбаса пепперони, ветчина, лук, сладкий перец, грибной микс, свинина, говядина, оливки черные</p>
+                          </div>
+                          <div class="btn-group card__buttons me-md-3 m-0 align-self-center align-self-md-end">
+                            <p class="text-prices d-none d-md-block">690 &#8381;</p>
+                            <button type="button" class="card__button card__left-button ms-lg-3 ms-3">-</button>
+                            <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                            <button type="button" class="card__button card__right-button me-lg-3 me-3">+</button>
+                            <p class="text-prices ">690 &#8381;</p>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container p-0 mb-1 mb-md-4 pt-md-3">
+            <div class="row m-0">
+              <div class="col-12 p-0">
+                <div class="card cards overflow-hidden">
+                  <div class="container p-0">
+                    <div class="row m-0 align-items-center ">
+                        <img src="./image/burger.png" alt="Бургер Два сыра" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                        <p class="card__label-new d-none d-md-block">NEW </p>
+                        <h3 class=" card-img-overlay text-min-card d-block d-md-none m-0 align-middle">Бургер &#171;Два сыра&#187;</h3>
+                        <div class="col-md-9 col-6 g-0 ">
+                        <div class="card-body p-md-3 p-0 d-flex flex-column">
+                          <div class="d-none d-md-block">
+                            <button type="button" class="btn card__del-button"></button>
+                            <h3 class="card-title text-card-header">Бургер &#171;Два сыра&#187;</h3>
+                            <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 ">Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
+                          </div>
+                          <div class="btn-group card__buttons me-md-3 m-0 align-self-center align-self-md-end">
+                            <p class="text-prices d-none d-md-block">180 &#8381;</p>
+                            <button type="button" class="card__button card__left-button ms-lg-3 ms-3">-</button>
+                            <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                            <button type="button" class="card__button card__right-button me-lg-3 me-3">+</button>
+                            <p class="text-prices ">180 &#8381;</p>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container p-0 mb-1 mb-md-4 pt-md-3">
+            <div class="row m-0">
+              <div class="col-12 p-0">
+                <div class="card cards overflow-hidden">
+                  <div class="container p-0">
+                    <div class="row m-0 align-items-center ">
+                        <img src="./image/sushi.png" alt="Суши Унаги" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                        <p class="card__label-new d-none d-md-block">NEW </p>
+                        <h3 class=" card-img-overlay text-min-card d-block d-md-none m-0 align-middle">Суши Унаги</h3>
+                        <div class="col-md-9 col-6 g-0 ">
+                        <div class="card-body p-md-3 p-0 d-flex flex-column">
+                          <div class="d-none d-md-block">
+                            <button type="button" class="btn card__del-button"></button>
+                            <h3 class="card-title text-card-header">Суши Унаги</h3>
+                            <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 ">Угорь</p>
+                          </div>
+                          <div class="btn-group card__buttons me-md-3 m-0 align-self-center align-self-md-end">
+                            <p class="text-prices d-none d-md-block">120 &#8381;</p>
+                            <button type="button" class="card__button card__left-button ms-lg-3 ms-3">-</button>
+                            <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                            <button type="button" class="card__button card__right-button me-lg-3 me-3">+</button>
+                            <p class="text-prices ">120 &#8381;</p>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container p-0 pt-md-3 mb-md-4">
+            <div class="row m-0">
+              <div class="col-12 p-0">
+                <div class="card cards overflow-hidden">
+                  <div class="container p-0">
+                    <div class="row m-0 align-items-center ">
+                        <img src="./image/sushi-2.png" alt="Умэ" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                        <p class="card__label-new d-none d-md-block">NEW </p>
+                        <h3 class=" card-img-overlay text-min-card d-block d-md-none m-0 align-middle">Умэ</h3>
+                        <div class="col-md-9 col-6 g-0 ">
+                        <div class="card-body p-md-3 p-0 d-flex flex-column">
+                          <div class="d-none d-md-block">
+                            <button type="button" class="btn card__del-button"></button>
+                            <h3 class="card-title text-card-header">Умэ</h3>
+                            <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 ">Угорь</p>
+                          </div>
+                          <div class="btn-group card__buttons me-md-3 m-0 align-self-center align-self-md-end">
+                            <p class="text-prices d-none d-md-block">120 &#8381;</p>
+                            <button type="button" class="card__button card__left-button ms-lg-3 ms-3">-</button>
+                            <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                            <button type="button" class="card__button card__right-button me-lg-3 me-3">+</button>
+                            <p class="text-prices ">120 &#8381;</p>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container p-0 pt-md-4 pt-3">
+            <p class="text-headers mb-md-3 mb-0"> Подарки</p>
+            <div class="row m-0 pt-md-4 pt-3">
+              <div class="col-12 p-0">
+                <div class="card cards overflow-hidden">
+                  <div class="container p-0">
+                    <div class="row m-0 align-items-center ">
+                        <img src="./image/mors.png" alt="Подарок" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                        <p class="card__label-present d-none d-md-block">Подарок</p>
+                        <h3 class=" card-img-overlay text-min-card d-block d-md-none m-0 align-middle">Морс "Смородина"</h3>
+                        <div class="col-md-9 col-6 g-0 ">
+                        <div class="card-body p-md-3 p-0 d-flex flex-column">
+                          <div class="d-none d-md-block">
+                            <button type="button" class="btn card__del-button"></button>
+                            <h3 class="card-title text-card-header">Морс "Смородина"</h3>
+                            <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 ">Морс "Смородина", 1 л.</p>
+                          </div>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
 
      <!--карточка с вводом промокода -->
-        <div class="col-lg-4 col-12 p-0 ps-md-3">
-          <div class="card order__promo p-md-5 p-3">
+        <div class="col-lg-4 col-12 p-0 ps-lg-3 mt-1 mt-lg-0">
+          <div class="card order__promo p-xl-5 p-3">
             <h3 class="card-text text-card-header">+ 358 баллов</h3>
             <p class="card-text text-card-body mt-3">Баллы начисляются в течении двух дней и доступны для использования при заказе от 500 руб. Только для зарегистрированных пользователей. </p>
             <p class="card-text text-card-body mt-3">Зарегистрируйтесь или войдите.</p>
@@ -180,135 +337,13 @@
             <button type="button" class="btn w-100 card__next">Далее</button>
           </div>
         </div>
-
-
       </div>
     </div>
   </section>
 
 
 <!-- блок MAIN
-  <div class="container px-0">
-    <div class="row">
-      <div class="col-8 ">
-        <div class="card cards card__bucket mt-3">
-          <button type="button" class="btn card__del-button"></button>
-          <img src="./image/pizza-bbq.png" alt="" class="card-img card__image-left">
-          <div class="container d-flex flex-column">
-            <h3 class="card-title card__title">Чизбургер барбекю</h3>
-            <p class="card-text card__text">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
-            <div class="btn-group card__buttons" role="group">
-              <p class="text__price">8888 &#8381;</p>
-              <button type="button" class="btn card__button card__left-button">-</button>
-              <input type="text"  class="card__button card__buttons-counter" value="1" placeholder="1">
-              <button type="button" class="btn card__button card__right-button">+</button>
-              <p class="text__price">8888 &#8381;</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="card cards card__bucket">
-          <button type="button" class="btn card__del-button"></button>
-          <img src="./image/pizza-suprim.png" alt="" class="card-img card__image-left">
-          <p class="card__label-new">NEW </p>
-          <div class="container d-flex flex-column">
-            <h3 class="card-title card__title">Суприм</h3>
-            <p class="card-text card__text">Соус томатный, сыр моцарелла, колбаса пепперони, ветчина, лук, сладкий перец, грибной микс, свинина, говядина, оливки черные</p>
-            <div class="btn-group card__buttons" role="group">
-              <p class="text__price">690 &#8381;</p>
-              <button type="button" class="btn card__button card__left-button">-</button>
-              <input type="text"  class="card__button card__buttons-counter" value="1" placeholder="1">
-              <button type="button" class="btn card__button card__right-button">+</button>
-              <p class="text__price">690 &#8381;</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card cards card__bucket">
-          <button type="button" class="btn card__del-button"></button>
-          <img src="./image/burger.png" alt="" class="card-img card__image-left">
-          <p class="card__label-new">NEW </p>
-          <div class="container d-flex flex-column">
-            <h3 class="card-title card__title">Бургер &#171;Два сыра&#187;</h3>
-            <p class="card-text card__text">Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
-            <div class="btn-group card__buttons" role="group">
-              <p class="text__price">180 &#8381;</p>
-              <button type="button" class="btn card__button card__left-button">-</button>
-              <input type="text"  class="card__button card__buttons-counter" value="3" placeholder="1">
-              <button type="button" class="btn card__button card__right-button">+</button>
-              <p class="text__price">180 &#8381;</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card cards card__bucket">
-          <button type="button" class="btn card__del-button"></button>
-          <img src="./image/sushi.png" alt="" class="card-img card__image-left">
-          <p class="card__label-new">NEW </p>
-          <div class="container d-flex flex-column">
-            <h3 class="card-title card__title">Суши Унаги</h3>
-            <p class="card-text card__text">Угорь</p>
-            <div class="btn-group card__buttons" role="group">
-              <p class="text__price">120 &#8381;</p>
-              <button type="button" class="btn card__button card__left-button">-</button>
-              <input type="text"  class="card__button card__buttons-counter" value="10" placeholder="1">
-              <button type="button" class="btn card__button card__right-button">+</button>
-              <p class="text__price">1200 &#8381;</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="card cards card__bucket">
-          <button type="button" class="btn card__del-button"></button>
-          <img src="./image/sushi-2.png" alt="" class="card-img card__image-left">
-          <p class="card__label-new">NEW </p>
-          <div class="container d-flex flex-column">
-            <h3 class="card-title card__title">Умэ</h3>
-            <p class="card-text card__text">Лосось, угорь, сыр «Филадельфия», авокадо</p>
-            <div class="btn-group card__buttons" role="group">
-              <p class="text__price">385 &#8381;</p>
-              <button type="button" class="btn card__button card__left-button">-</button>
-              <input type="text"  class="card__button card__buttons-counter" value="2" placeholder="1">
-              <button type="button" class="btn card__button card__right-button">+</button>
-              <p class="text__price">770 &#8381;</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-4 ">
-         <div class="form form-promo">
-            <h3 class="form-title card__title">+ 358 баллов</h3>
-            <p class="card__text">Баллы начисляются в течении двух дней и доступны для использования при заказе от 500 руб. Только для зарегистрированных пользователей. </p>
-            <p class="card__text">Зарегистрируйтесь или войдите.</p>
-            <fieldset class="form__promocode">
-              <h3 class="form-title card__title">Промокод</h3>
-              <input type="text" class="form-control form__input" placeholder="Введите промокод">
-              <button type="button" class="btn form__submit">Применить</button>
-            </fieldset>
-            <p class="text__price">Сумма заказа: <span class="span-accent">4200</span> 3580 &#8381;</p>
-            <button type="button" class="btn w-100 form__next">Далее</button>
-          </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container pt-5 mb-4 px-0">
-    <div class="row ">
-      <div class="col-8 ">
-        <p class="text text__status text__status-active pb-3">Подарки</p>
-        <div class="card cards card__bucket mt-4">
-          <button type="button" class="btn card__del-button"></button>
-          <img src="./image/mors.png" alt="подарок" class="card-img card__image-left">
-          <p class="card__label-present">Подарок</p>
-          <div class="container d-flex flex-column">
-            <h3 class="card-title card__title">Морс "Смородина"</h3>
-            <p class="card-text card__text">Морс "Смородина", 1 л.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <div class="container recommend">
     <p class="text text__status text__status-active pb-3">Рекомендуем</p>

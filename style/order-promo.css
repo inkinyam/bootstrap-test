@@ -1,0 +1,52 @@
+/*стили формы с введением промокода*/
+
+.order__promo {
+  min-height: 597px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 0 1px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .order__promo {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+
+  }
+}
+
+.card__input {
+  outline: none;
+  border: 2px solid #808080;
+  border-radius: 30px;
+  height: 40px;
+}
+
+.card__submit {
+  outline: none;
+  border: 2px solid var(--color-main);
+  border-radius: 40px;
+  color: var(--color-main);
+  padding: 0;
+  width: 160px;
+  height: 40px;
+  align-self: flex-end;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.card__next {
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  background-color: var(--color-main);
+  color: white;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.25);
+  height: 64px;
+
+}

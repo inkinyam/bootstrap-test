@@ -3,6 +3,9 @@
 
 @import url(./text-styles.css);
 @import url(./header.css);
+@import url(./row-status.css);
+@import url(./cards.css);
+@import url(./order-promo.css);
 @import url(./footer.css);
 
 .root {
@@ -18,210 +21,25 @@
 }
 
 
-/*стили строки состояния заказа*/
-.status {
-  margin: 32px 0 32px;
-}
-
-.row__status * {
-  flex-shrink: 0;
-}
-
-.row__status {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-
-.divider {
-  flex-shrink: 1;
-  border-bottom: 4px dotted var(--color-grey);
-  margin: 0 18px;
-  width: 100%;
-}
-
-@media (max-width: 968px) {
-  .divider{
-    margin: 0 8px;
-    border-bottom: 2px dotted var(--color-grey);
-  }
-}
-
-
-/*стили Карточек с заказом*/
-
-.cards {
-  border: none;
-  background-color: var(--bg-grey);
-  border-radius: 8px;
-  margin: 0;
-  padding: 0;
-
-}
-
-.card__image-left {
-  max-width: 185px;
-  height: 215px;
-  object-fit: cover;
-  margin-right: 16px;
-}
-
-.card__label-new {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 67px;
-  height: 32px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32), 0 1px 6px rgba(0, 0, 0, 0.24);
-  color: white;
-  background-color: #E30029;
-  border-radius: 16px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-}
-
-.card__label-present {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  width: 67px;
-  height: 32px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.32), 0 1px 6px rgba(0, 0, 0, 0.24);
-  color: #333333;
-  background-color: #FFE600;
-  border-radius: 16px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 32px;
-  font-weight: 500;
-  padding: 0;
-  margin: 0;
-}
-
-.card__buttons {
-  width: 286px;
-  height: 48px;
-  align-items: center;
-  align-self: flex-end;
-}
-
-.card__buttons-counter{
-  width: 52px;
-}
-
-.card__button {
-  border: none;
-  outline: none;
-  border-top: 2px solid var(--color-main);
-  border-bottom: 2px solid var(--color-main);
-  padding: 0;
-  height: 48px;
-  background-color: white;
-}
-
-.card__left-button {
-  border-right: 2px solid var(--color-main);
-  border-top-left-radius: 30px !important;
-  border-bottom-left-radius: 30px !important;
-  margin-left: 16px !important;
-}
-
-.card__right-button {
-  border-left: 2px solid var(--color-main);
-  border-top-right-radius: 30px !important;
-  border-bottom-right-radius: 30px !important;
-  margin-right: 16px;
-}
-
-.card__del-button {
-  background-image: url(../image/button-del-item.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: 20px;
-  right: 16px;
-}
-
-.card__buttons-counter {
-  text-align: center;
-}
-
-
-.card__text {
-  margin-bottom: 24px;
-}
-
-
-
-
-/*стили формы с введением промокода*/
-
-.order__promo {
-  min-height: 597px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 0 1px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-}
-
 .mt-40 {
- margin-top: 40px;
-}
+  margin-top: 40px;
+ }
 
-.mb-40 {
-  margin-bottom: 40px;
-}
+ .mb-40 {
+   margin-bottom: 40px;
+ }
 
-.mt-10 {
-  margin-top: 10px;
-}
+ .mt-10 {
+   margin-top: 10px;
+ }
 
-.mb-10 {
-  margin-bottom: 10px;
-}
+ .mb-10 {
+   margin-bottom: 10px;
+ }
 
-.card__input {
-  outline: none;
-  border: 2px solid #808080;
-  border-radius: 30px;
-  height: 40px;
-}
 
-.card__submit {
-  outline: none;
-  border: 2px solid var(--color-main);
-  border-radius: 40px;
-  color: var(--color-main);
-  padding: 0;
-  width: 160px;
-  height: 40px;
-  align-self: flex-end;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
 
-.card__next {
-  outline: none;
-  border: none;
-  border-radius: 40px;
-  background-color: var(--color-main);
-  color: white;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.25);
-  height: 64px;
 
-}
 
 /*стили для карточек в рекомендуемом*/
 .recommend {
@@ -290,5 +108,4 @@
   border: 1px solid black;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28), 0 1px 5px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.2);
 }
-
 

@@ -24,8 +24,19 @@
   color: black;
   margin: 0;
   padding: 0;
-
 }
+
+.text-prices {
+  /*цены*/
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+  margin: 0;
+  padding: 0;
+  width: 61px;
+}
+
 
 .text-color-black-60 {
   color: #666666;
@@ -65,17 +76,25 @@
 }
 
 .text-card-body {
-    /*текст  карточек*/
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0;
-    padding: 0;
+  /*текст  карточек*/
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  padding: 0;
 }
 
+.text-min-card {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 25px;
+  color: white;
+  text-align: center;
+  max-width: 150px;
+}
 
 @media (max-width: 968px) {
-  .text-headers{
+  .text-headers {
     /*текст статуса заказов, рекомендации, подарки*/
     font-size: 22px;
     line-height: 32px;
@@ -98,5 +117,15 @@
       margin: 0;
       padding: 0;
   }
+
 }
 
+@media (max-width: 768px) {
+.text-prices {
+  /*цены*/
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+  width: 45px;
+}
+}
