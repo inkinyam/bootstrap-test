@@ -17,17 +17,89 @@
 }
 
 .text-numbers {
-  /*номера телефонов*/
+  /*номера телефонов, цены*/
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
   color: black;
+  margin: 0;
+  padding: 0;
+
 }
 
 .text-color-black-60 {
   color: #666666;
 }
 
+.text-color-black-30 {
+  color: #ccc;
+}
+
+
 .text-color-main {
   color: var(--color-main);
 }
+
+.text-headers {
+  /*текст статуса заказов, рекомендации, подарки*/
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.text-headers-unactive {
+  color: var(--color-grey);
+}
+
+.text-card-header {
+  /*текст заголовков карточек*/
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.text-card-body {
+    /*текст заголовков карточек*/
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 968px) {
+  .text-headers{
+    /*текст статуса заказов, рекомендации, подарки*/
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .text-card-header {
+    /*текст заголовков карточек*/
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-card-body {
+      /*текст заголовков карточек*/
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      color: black;
+      margin: 0;
+      padding: 0;
+  }
+}
+

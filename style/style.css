@@ -23,31 +23,31 @@
   margin: 32px 0 32px;
 }
 
-.text__status * {
+.row__status * {
   flex-shrink: 0;
 }
 
-.text__status {
+.row__status {
   margin: 0;
   padding: 0;
-  color: var(--color-grey);
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 44px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.text__status-active {
-  color: black;
-}
 
 .divider {
   flex-shrink: 1;
   border-bottom: 4px dotted var(--color-grey);
-  margin:  0 18px;
+  margin: 0 18px;
   width: 100%;
+}
+
+@media (max-width: 968px) {
+  .divider{
+    margin: 0 8px;
+    border-bottom: 2px dotted var(--color-grey);
+  }
 }
 
 
@@ -197,42 +197,34 @@
 
 /*стили формы с введением промокода*/
 
-.form-promo {
-  max-width: 411px;
+.order__promo {
   min-height: 597px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 0 1px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
-  padding: 40px;
 }
 
-.form-promo>.card__title {
- margin-top: 0;
+.mt-40 {
+ margin-top: 40px;
 }
 
-.form-promo>.card__text {
-  color:#333333;
-  max-width: 331px;
+.mb-40 {
+  margin-bottom: 40px;
 }
 
-.form__promocode {
-  display: flex;
-  flex-direction: column;
-}
-
-.form__input {
+.card__input {
   outline: none;
   border: 2px solid #808080;
   border-radius: 30px;
+  height: 40px;
 }
 
-.form__submit {
+.card__submit {
   outline: none;
   border: 2px solid var(--color-main);
   border-radius: 40px;
   color: var(--color-main);
   padding: 0;
-  margin: 16px 0 40px;
   width: 160px;
   height: 40px;
   align-self: flex-end;
@@ -241,7 +233,7 @@
   font-weight: 400;
 }
 
-.form__next {
+.card__next {
   outline: none;
   border: none;
   border-radius: 40px;
@@ -252,7 +244,7 @@
   font-weight: 400;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.25);
   height: 64px;
-  margin-top: 60px;
+
 }
 
 /*стили для карточек в рекомендуемом*/
