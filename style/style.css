@@ -59,16 +59,7 @@
   border-radius: 8px;
   margin: 0;
   padding: 0;
-}
 
-.card__bucket {
-  flex-direction: row;
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.card__bucket:last-child {
-  margin-bottom: 0;
 }
 
 .card__image-left {
@@ -165,34 +156,11 @@
 }
 
 
-.card__title {
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 32px;
-  margin: 16px 0 10px;
-}
-
 .card__text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #666666;
-  max-width: 620px;
   margin-bottom: 24px;
 }
 
-.text__price {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #333333;
-  margin: 0;
-}
 
-.span-accent {
-  color: var(--color-grey);
-  text-decoration: line-through;
-}
 
 
 /*стили формы с введением промокода*/
@@ -210,6 +178,14 @@
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
 }
 
 .card__input {

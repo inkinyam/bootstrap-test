@@ -21,7 +21,7 @@
           <img src="./image/logo.svg" alt="logo" class=" img  header__logo">
         </div>
  <!-- тот блок, который отображается на больших экранах, прячем для экранов меньше 768 -->
-        <div class="col-xl-9 col-md-9">
+        <div class="col-xl-9 col-md-9 d-none d-md-block">
           <div class="row">
             <div class="col-lg-3 col-md-6 g-0 ">
               <div class="container d-flex flex-row">
@@ -72,7 +72,7 @@
     </div>
   </div>
 <!-- блок HEADER для маленьких экранов , показываем для экранов меньше 768-->
-  <div class="header-small">
+  <div class="header-small  d-block d-md-none">
     <div class="contaier">
       <div class="row m-0 justify-content-between">
 
@@ -112,7 +112,7 @@
 <main >
 <!-- блок STATUS, отображение статуса заказа-->
   <section class="status ps-lg-5 ps-3 overflow-hidden ">
-    <div class="container">
+    <div class="container p-0">
       <div class="row w-75">
         <p class="text-headers row__status">
           <span class="">Корзина</span>
@@ -130,23 +130,58 @@
   <section class="order">
     <div class="container">
       <div class="row">
-        <!--карточка карточки с заказом -->
-        <div class="col-lg-8 col-12 bg-warning h-50">sdsds</div>
-       <!--карточка с вводом промокода -->
-        <div class="col-lg-4 col-12 p-0 p-lg-2">
-            <div class="card order__promo p-md-5 p-3">
-               <h3 class="card-text text-card-header">+ 358 баллов</h3>
-               <p class="card-text text-card-body mt-3">Баллы начисляются в течении двух дней и доступны для использования при заказе от 500 руб. Только для зарегистрированных пользователей. </p>
-               <p class="card-text text-card-body mt-3">Зарегистрируйтесь или войдите.</p>
-               <div class="contaier mt-40 mb-40 d-flex flex-column">
-                 <h3 class="card-text text-card-header mb-3">Промокод</h3>
-                 <input type="text" class="card__input w-100 text-center" placeholder="Введите промокод">
-                 <button type="button" class="btn card__submit mt-3">Применить</button>
-               </div>
-               <p class="text-numbers mb-40">Сумма заказа: <span class="text-color-black-30 text-decoration-line-through">4200</span> 3580 &#8381;</p>
-               <button type="button" class="btn w-100 card__next">Далее</button>
-             </div>
+      <!--карточка карточки с заказом -->
+        <div class="col-lg-8 col-12 p-0 pe-md-3">
+          <div class="container p-0">
+            <div class="row m-0">
+              <div class="col-12 p-0">
+
+                <div class="card cards">
+                  <div class="container p-0">
+                    <div class="row m-0">
+                      <div class="col-lg-3 g-0">
+                        <img src="./image/pizza-bbq.png" alt="Чизбургер барбекю" class="card-img m-0 card__image-left">
+                      </div>
+                      <div class="col-lg-9 g-0 d-flex flex-column">
+                        <button type="button" class="btn card__del-button"></button>
+                        <h3 class="card-title text-card-header mt-3">Чизбургер барбекю</h3>
+                        <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 d-none d-md-block">Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
+                        <div class="btn-group card__buttons me-3">
+                          <p class="text-numbers">8888 &#8381;</p>
+                          <button type="button" class="btn card__button card__left-button">-</button>
+                          <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                          <button type="button" class="btn card__button card__right-button">+</button>
+                          <p class="text-numbers">8888 &#8381;</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
         </div>
+
+
+     <!--карточка с вводом промокода -->
+        <div class="col-lg-4 col-12 p-0 ps-md-3">
+          <div class="card order__promo p-md-5 p-3">
+            <h3 class="card-text text-card-header">+ 358 баллов</h3>
+            <p class="card-text text-card-body mt-3">Баллы начисляются в течении двух дней и доступны для использования при заказе от 500 руб. Только для зарегистрированных пользователей. </p>
+            <p class="card-text text-card-body mt-3">Зарегистрируйтесь или войдите.</p>
+            <div class="contaier mt-40 mb-40 d-flex flex-column">
+              <h3 class="card-text text-card-header mb-3">Промокод</h3>
+              <input type="text" class="card__input w-100 text-center" placeholder="Введите промокод">
+              <button type="button" class="btn card__submit mt-3">Применить</button>
+            </div>
+            <p class="text-numbers mb-40">Сумма заказа: <span class="text-color-black-30 text-decoration-line-through">4200</span> 3580 &#8381;</p>
+            <button type="button" class="btn w-100 card__next">Далее</button>
+          </div>
+        </div>
+
+
       </div>
     </div>
   </section>
