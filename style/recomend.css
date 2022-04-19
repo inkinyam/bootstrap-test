@@ -1,0 +1,33 @@
+/*стили строки рекомендаций*/
+.recommend-row {
+  border-bottom: 2px solid #B3B3B3;
+}
+
+.card-recommend{
+  width: 298px;
+}
+
+.recommend-container {
+  width: 1337px;
+  overflow: hidden;
+}
+
+.recommend-button{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  outline: none;
+  color: var(--color-main);
+  background-color: white;
+  border: 2px solid var(--color-main);
+  border-radius: 32px;
+  padding: 0;
+  width: 160px;
+  height: 40px;
+  align-self: flex-end;
+}
+
+.recommend-button-colored {
+  background-color: var(--color-main);
+  color: white;
+}

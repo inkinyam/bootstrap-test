@@ -6,7 +6,9 @@
 @import url(./row-status.css);
 @import url(./cards.css);
 @import url(./order-promo.css);
+@import url(./recomend.css);
 @import url(./footer.css);
+@import url(./popup.css);
 
 .root {
   --color-main: #CC693E;
@@ -18,16 +20,8 @@
   max-width: 1440px;
   min-width: 320px;
   margin: 0 auto;
+  position: relative;
 }
-
-
-.mt-40 {
-  margin-top: 40px;
- }
-
- .mb-40 {
-   margin-bottom: 40px;
- }
 
  .mt-10 {
    margin-top: 10px;
@@ -38,73 +32,9 @@
  }
 
 
-
-
-
-/*стили для карточек в рекомендуемом*/
-.recommend {
-  margin: 64px 0 0;
-  padding: 0;
-
-}
-
-.recommend-row {
-  max-width: 1337px;
-  overflow: hidden; /*спрятана карточка!*/
-  flex-wrap: nowrap;
-  border-bottom: 2px solid #B3B3B3;
-}
-
-.card-recommend{
-  max-width: 298px;
-  margin-bottom: 64px;
-}
-
-.card-recommend-title {
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  width: 265px;
-  margin: 16px auto;
-}
-
-.card-recommend-text{
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 400;
-  width: 265px;
-  margin: 0 auto 16px;
-}
-
-.recommend-button{
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-  outline: none;
-  color: var(--color-main);
-  background-color: white;
-  border: 2px solid var(--color-main);
-  border-radius: 32px;
-  padding: 0;
-  margin: 0 16px 16px 0;
-  width: 160px;
-  height: 40px;
-  align-self: flex-end;
-}
-
-.recommend-button-colored {
-  background-color: var(--color-main);
-  color: white;
-}
-
-.final-price {
-  margin: 32px 0;
-  align-self: flex-end;
-}
-
-.button__next {
+.button__final {
   width: 331px;
-  margin: 20px 0 70px;
+  margin: 32px 0 70px;
   border: 1px solid black;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.28), 0 1px 5px rgba(0, 0, 0, 0.35), 0 1px 1px rgba(0, 0, 0, 0.2);
 }

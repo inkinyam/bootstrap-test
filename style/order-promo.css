@@ -1,7 +1,7 @@
 /*стили формы с введением промокода*/
 
 .order__promo {
-  min-height: 597px;
+  min-height: 532px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 0 1px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
@@ -48,5 +48,4 @@
   font-weight: 400;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.25);
   height: 64px;
-
 }

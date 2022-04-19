@@ -1,4 +1,3 @@
-
 /*стили Карточек с заказом*/
 
 .cards {
@@ -7,7 +6,7 @@
   border-radius: 8px;
   margin: 0;
   padding: 0;
-
+  height: fit-content;
 }
 
 .card__image-left {
@@ -15,27 +14,6 @@
   width: 185px;
   height: 215px;
 }
-
-@media (max-width: 1200px) {
-  .card__image-left {
-    width: 150px;
-    height: 215px;
-  }
-}
-
-@media (max-width: 768px) {
-  .cards {
-    background-color: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0;
-  }
-
-  .card__image-left {
-    width: 150px;
-    height: 60px;
-  }
-}
-
 
 .card__label-new {
   position: absolute;
@@ -73,35 +51,31 @@
   margin: 0;
 }
 
-.card__buttons {
+
+.btn-block{
   height: 48px;
-  align-items: center;
+  width: 132px;
+  border-radius: 30px;
+  border: 2px solid var(--color-main);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
 .card__button {
   border: none;
   outline: none;
-  border-top: 2px solid var(--color-main);
-  border-bottom: 2px solid var(--color-main);
   padding: 0;
-  height: 48px;
   width: 52px;
   background-color: white;
 }
 
-.card__left-button {
+.card__buttons-counter {
+  text-align: center;
+  border-left: 2px solid var(--color-main);
   border-right: 2px solid var(--color-main);
-  border-top-left-radius: 30px !important;
-  border-bottom-left-radius: 30px !important;
-  width: 40px;
 }
 
-.card__right-button {
-  border-left: 2px solid var(--color-main);
-  border-top-right-radius: 30px !important;
-  border-bottom-right-radius: 30px !important;
-  width: 40px;
-}
 
 .card__del-button {
   background-image: url(../image/button-del-item.svg);
@@ -114,24 +88,43 @@
   right: 16px;
 }
 
-.card__buttons-counter {
-  text-align: center;
+.card-cover {
+  max-width: 150px;
+  margin: 0;
+  background-color: black;
+  opacity: 0.5;
+
 }
 
-.card__text {
-  margin-bottom: 24px;
+@media (max-width: 1200px) {
+  .card__image-left {
+    width: 150px;
+    height: 215px;
+  }
 }
 
 @media (max-width: 768px) {
-  .card__button{
+  .cards {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 0 4px rgba(0, 0, 0, 0.16), 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+  }
+
+  .card__image-left {
+    width: 150px;
+    height: 60px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .btn-block{
     height: 32px;
+    width: 88px;
+  }
+
+  .card__button{
     width: 36px;
   }
-  .card__left-button, .card__right-button {
-    width: 26px;
-  }
-  .card__del-button {
-    width: 16px;
-    height: 16px;
-  }
+
 }

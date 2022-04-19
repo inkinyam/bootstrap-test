@@ -1,4 +1,5 @@
 /*Стили текст*/
+
 .text-small {
   /*хедер, футер копирайт*/
   font-size: 12px;
@@ -7,7 +8,7 @@
   color: white;
 }
 
-.text-price-sm {
+.text-price-btn {
    /*хедер кнопка*/
   font-size: 14px;
   line-height: 20px;
@@ -34,22 +35,13 @@
   color: black;
   margin: 0;
   padding: 0;
+
+}
+
+.text-prices-width {
   width: 61px;
 }
 
-
-.text-color-black-60 {
-  color: #666666;
-}
-
-.text-color-black-30 {
-  color: #ccc;
-}
-
-
-.text-color-main {
-  color: var(--color-main);
-}
 
 .text-headers {
   /*текст статуса заказов, рекомендации, подарки*/
@@ -91,6 +83,45 @@
   color: white;
   text-align: center;
   max-width: 150px;
+  margin: 0;
+  z-index: 2000;
+}
+
+.text-header-promo {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.text-promo {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.text-price-promo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.text-color-black-60 {
+  color: #666666;
+}
+
+.text-color-black-30 {
+  color: #ccc;
+}
+
+
+.text-color-main {
+  color: var(--color-main);
 }
 
 @media (max-width: 968px) {
@@ -103,20 +134,25 @@
   .text-card-header {
     /*текст заголовков карточек*/
     font-size: 18px;
-    font-weight: 700;
     line-height: 24px;
-    margin: 0;
-    padding: 0;
   }
 
   .text-card-body {
-      /*текст  карточек*/
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 16px;
-      margin: 0;
-      padding: 0;
+    /*текст  карточек*/
+    font-size: 12px;
+    line-height: 16px;
   }
+
+  .text-header-promo {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .text-price-promo {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 
 }
 
@@ -126,6 +162,9 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 700;
+  }
+
+.text-prices-width {
   width: 45px;
-}
+  }
 }
