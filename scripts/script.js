@@ -4,11 +4,6 @@ const bigPopup = document.querySelector('.popup');
 // массив карточек
 const cards = Array.from(document.querySelectorAll('.order-cards'));
 
-//переменные для открытия попапа
-const popupImage        = document.querySelector('.card__image-left');
-const popupHeader       = document.querySelector('.cards-header');
-const popupComposition  = document.querySelector('.cards-composition');
-
 //Создаем заполненный попап
 const createPopup = (header, composition, img) => {
   const popupTemplate      = document.querySelector('#popupTemplate').content;
@@ -31,7 +26,7 @@ const renderPopup = (header, composition, img) => {
   bigPopup.classList.remove('d-none');
 }
 
-
+//навешиваем слушатель на карточки для открытия попапа с соответствующими данными
 cards.forEach(item => {
   item.addEventListener('click', evt => {
     bigPopup.classList.add('d-block');
@@ -46,7 +41,7 @@ cards.forEach(item => {
   })
 })
 
-
+//закрытие попапа по Esc
 document.addEventListener('keydown', evt => {
   if (evt.key === "Escape") {
       bigPopup.classList.remove('d-block');
