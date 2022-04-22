@@ -15,7 +15,12 @@
   height: 215px;
 }
 
+.card__label {
+  display: none;
+}
+
 .card__label-new {
+  display: block;
   position: absolute;
   top: 16px;
   left: 16px;
@@ -34,6 +39,7 @@
 }
 
 .card__label-present {
+  display: block;
   position: absolute;
   top: 16px;
   left: 16px;
@@ -51,6 +57,10 @@
   margin: 0;
 }
 
+.price-box {
+  width: 61px;
+
+}
 
 .btn-block{
   height: 48px;

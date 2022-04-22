@@ -130,7 +130,12 @@
       <div class="row m-0">
 
       <!--карточки с заказом -->
-        <div class="col-lg-8 col-12 p-0 pe-lg-3 mt-md-3">
+        <div class="col-lg-8 col-12 p-0 pe-lg-3 mt-md-3 ">
+          <div class="card-place">
+
+
+          </div>
+          <!--
           <div class="container p-0  mb-1 mb-md-4">
             <div class="row m-0">
               <div class="col-12 p-0">
@@ -306,7 +311,7 @@
               </div>
             </div>
           </div>
-
+        -->
 
           <div class="container p-0 pt-md-4 pt-3">
             <p class="text-headers mb-md-3 mb-0 ps-lg-0 ps-3"> Подарки</p>
@@ -586,11 +591,54 @@
         <button class="popup-btn w-100 mt-4">В корзину • <span class="text-headers-unactive text-decoration-line-through">940</span> • 659 ₽</button>
       </div>
     </div>
-
 </template>
 
 
-  <script type="text/javascript" src="./scripts/script.js"></script>
+<template id="card-template">
+  <div class="container p-0 mb-1 mb-md-4 pt-md-3 orderCardsItem">
+    <div class="row m-0">
+      <div class="col-12 p-0">
+        <div class="card cards overflow-hidden order-cards">
+          <div class="container p-0">
+            <div class="row m-0 align-items-center ">
+                <img src="./image/pizza-suprim.png" alt="Суприм" class=" col-md-3 col-6 g-0 m-0 card__image-left">
+                <p class="card__label-new d-none d-md-block card__label">NEW </p>
+                <h3 class="card-img-overlay d-block d-md-none m-0 align-middle text-min-card orderCardsItem__overlay ">Суприм</h3>
+                <div class="card-img-overlay d-block d-md-none m-0 align-middle card-cover"></div>
+                <div class="col-md-9 col-6 g-0 ">
+                <div class="card-body p-md-3 p-0 d-flex flex-column">
+                  <div class="d-none d-md-block">
+                    <button type="button" class="btn card__del-button"></button>
+                    <h3 class="card-title text-card-header cards-header orderCardsItem__header">Суприм</h3>
+                    <p class="card-text text-color-black-60 text-card-body mt-10 mb-4 cards-composition orderCardsItem__description">Соус томатный, сыр моцарелла, колбаса пепперони, ветчина, лук, сладкий перец, грибной микс, свинина, говядина, оливки черные</p>
+                  </div>
+                  <div class="d-flex flex-row  m-0 align-self-center align-self-md-end align-items-center">
+                    <div class="price-box  d-none d-md-block">
+                      <span class="text-prices text-headers-unactive text-decoration-line-through orderCardsItem__discount d-inline">560</span>
+                      <p class="text-prices d-inline  orderCardsItem__price">690 &#8381;</p>
+                    </div>
+
+                    <div class="btn-block me-lg-3 me-3">
+                      <button type="button" class="card__button card__left-button">-</button>
+                      <input type="text"  class="card__button card__buttons-counter " value="1" placeholder="1" disabled>
+                      <button type="button" class="card__button card__right-button">+</button>
+                    </div>
+                    <div class="price-box">
+                      <span class="text-prices d-inline text-headers-unactive text-decoration-line-through orderCardsItem__discount orderCardsItem__discount-final">560</span>
+                      <p class="text-prices d-inline  orderCardsItem__price orderCardsItem__price-final">690 &#8381;</p>
+                    </div>
+                  </div>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+  <script type="module" src="./scripts/script.js"></script>
 
 </body>
 </html>

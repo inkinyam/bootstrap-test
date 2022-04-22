@@ -1,8 +1,13 @@
+import {cardArray} from './cards.js';
+import Card from './Card.js';
+
 // контейнер для попапа
 const bigPopup = document.querySelector('.popup');
 
 // массив карточек
 const cards = Array.from(document.querySelectorAll('.order-cards'));
+
+const cardPlace = document.querySelector('.card-place');
 
 //Создаем заполненный попап
 const createPopup = (header, composition, img) => {
@@ -47,7 +52,17 @@ document.addEventListener('keydown', evt => {
       bigPopup.classList.remove('d-block');
       bigPopup.classList.add('d-none');
 
-      bigPopup.lastElementChild.remove();
-      console.log(bigPopup.children);
+      bigPopup.innerHTML = '';
   }
 })
+
+
+
+
+const cardTemplate    = document.querySelector('#card-template').content;
+
+cardArray.forEach (item => {
+  let newCard = new Card (item, cardTemplate);
+  cardPlace.append(newCard.createCard());
+})
+
