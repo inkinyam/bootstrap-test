@@ -1,0 +1,22 @@
+{
+  "name": "bootstrap-test",
+  "version": "0.0.1",
+  "description": "### Что это за проект?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkinyam/bootstrap-test.git"
+  },
+  "author": "i_n_k_i",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkinyam/bootstrap-test/issues"
+  },
+  "homepage": "https://github.com/inkinyam/bootstrap-test#readme",
+  "dependencies": {
+    "jquery": "^3.6.0"
+  }
+}
